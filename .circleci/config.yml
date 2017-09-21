@@ -10,6 +10,6 @@ jobs:
        - run: echo "Installing Local Dependencies"
        - run: npm install
        - run: echo "Running Hello, World unit test..."
-       - run: npm test-ci
+       - run: npm run test-ci
        - run: echo "Completed successfully"
 
