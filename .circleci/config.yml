@@ -2,7 +2,7 @@ version: 2
 jobs:
    build:
      docker:
-       - image: circleci/node:7
+       - image: circleci/node:7-browsers
      steps:
        - checkout
        - run: echo "Installing Global Dependencies"
@@ -11,3 +11,4 @@ jobs:
        - run: npm install
        - run: echo "Running Hello, World unit test..."
        - run: npm test
+
