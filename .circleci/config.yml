@@ -1,0 +1,13 @@
+version: 2
+jobs:
+   build:
+     docker:
+       - image: circleci/node:7
+     steps:
+       - checkout
+       - run: echo "Installing Global Dependencies"
+       - run: npm install -g ionic cordova 
+       - run: echo "Installing Local Dependencies"
+       - run: npm install
+       - run: echo "Running Hello, World unit test..."
+       - run: npm test
