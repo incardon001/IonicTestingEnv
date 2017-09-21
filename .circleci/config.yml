@@ -6,7 +6,7 @@ jobs:
      steps:
        - checkout
        - run: echo "Installing Global Dependencies"
-       - run: npm install -g ionic cordova 
+       - run: sudo npm install -g ionic cordova 
        - run: echo "Installing Local Dependencies"
        - run: npm install
        - run: echo "Running Hello, World unit test..."
